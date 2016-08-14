@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Copyright 2014 Sheldon Neilson www.neilson.co.za Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. -->
+
+    <TableLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow0">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_weight="1"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/tableRow1" android:layout_weight="1">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/textView2" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_weight="1" android:textColor="@android:color/black"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/tableRow2" android:layout_weight="1">
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button1" android:layout_weight="1" android:text="@string/_1" android:tag="1"/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button2" android:layout_weight="1" android:text="@string/_2" android:tag="2"/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button3" android:layout_weight="1" android:text="@string/_3" android:tag="3"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/TableRow3" android:layout_weight="1">
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button4" android:layout_weight="1" android:text="@string/_4" android:tag="4"/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button5" android:layout_weight="1" android:text="@string/_5" android:tag="5"/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button6" android:layout_weight="1" android:text="@string/_6" android:tag="6"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/TableRow4" android:layout_weight="1">
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button7" android:layout_weight="1" android:text="@string/_7" android:tag="7"/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button8" android:layout_weight="1" android:text="@string/_8" android:tag="8"/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button9" android:layout_weight="1" android:text="@string/_9" android:tag="9"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="0dp" android:layout_width="wrap_content" android:id="@+id/tableRow5" android:layout_weight="1">
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button_decimal" android:layout_weight="1" android:text="@string/decimal_button_text" android:tag="."/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button0" android:layout_weight="1" android:text="@string/_0" android:tag="0"/>
+
+    <Button android:layout_height="fill_parent" android:layout_width="0dp" android:id="@+id/Button_minus" android:layout_weight="1" android:text="@string/minus_button_text" android:tag="-"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow6">
+
+    <Button android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/Button_clear" android:layout_weight="1" android:text="@string/clear_button_text" android:tag="clear"/>
+
+</TableRow>
+
+</TableLayout>

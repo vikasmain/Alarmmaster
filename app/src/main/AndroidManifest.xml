@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.alarmmaster">
+    <uses-sdk android:targetSdkVersion="17" android:minSdkVersion="8"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcherweb"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".AlarmActivity" android:label="@string/app_name">
+
+
+        <intent-filter>
+
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+
+    </intent-filter>
+
+    </activity>
+
+
+        <activity android:name="com.example.dell.alarmmaster.preferences.AlarmPreferencesActivity" android:label="@string/app_name" android:parentActivityName="com.example.dell.alarmmaster.AlarmActivity">
+
+        <!-- Parent activity meta-data to support API level 7+ -->
+
+
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".AlarmActivity"/>
+
+    </activity>
+
+        <service android:name=".service.AlarmService" android:label="@string/app_name" android:icon="@drawable/ic_launcherweb" android:process="com.example.dell.alarmmaster.serviceprocess"> </service>
+
+
+        <receiver android:name=".service.AlarmServiceBroadcastReciever">
+
+
+        <intent-filter>
+
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+    </intent-filter>
+
+    </receiver>
+
+        <activity android:name=".alert.AlarmAlertActivity" android:label="@string/app_name" android:screenOrientation="portrait"> </activity>
+
+        <receiver android:name=".alert.AlarmAlertBroadcastReciever"> </receiver>
+
+
+        <receiver android:name=".telephony.PhoneStateChangedBroadcastReciever">
+
+
+        <intent-filter>
+
+        <action android:name="android.intent.action.PHONE_STATE"/>
+
+    </intent-filter>
+
+    </receiver>
+    </application>
+
+</manifest>
